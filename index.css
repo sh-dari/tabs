@@ -1,7 +1,10 @@
+@import url(./fonts/fonts.css);
+
 .body {
   margin: 0 auto;
   padding: 30px;
   max-width: 1000px;
+  font-family: 'Golos', Arial, sans-serif;
 }
 
 .header {
