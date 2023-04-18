@@ -19,10 +19,19 @@
 }
 
 .header__line {
+  position: relative;
   height: 1px;
   width: 100%;
   margin-top: 18px;
   background: linear-gradient(to left, #73BE43 0, #73BE43 50%, #E9262D 50%, #E9262D 100%);
+}
+
+.header__short-line {
+  background-color: #E9262D;
+  max-width: 385px;
+  width: 40%;
+  height: 5px;
+  position: absolute;
 }
 
 .header__logo {
