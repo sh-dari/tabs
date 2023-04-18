@@ -19,12 +19,10 @@
 }
 
 .header__line {
-  border-bottom: 1px solid #545454;
   height: 1px;
   width: 100%;
-  opacity: 0.7;
   margin-top: 18px;
-  background: linear-gradient(to left, green 0, green 50%, red 50%, red 100%);
+  background: linear-gradient(to left, #73BE43 0, #73BE43 50%, #E9262D 50%, #E9262D 100%);
 }
 
 .header__logo {
@@ -126,4 +124,11 @@ ul li::before {
 
 .body__header {
   font-weight: 700;
+}
+
+.body__line {
+  height: 5px;
+  width: 100%;
+  margin-top: 26px;
+  background: linear-gradient(to left, #73BE43 0, #73BE43 50%, #E9262D 50%, #E9262D 100%);
 }
