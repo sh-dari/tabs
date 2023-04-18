@@ -1,0 +1,24 @@
+const tabs = document.querySelectorAll('.tabs__pane');
+const tabButtons = document.querySelectorAll('.tabs__btn');
+const continueButton = document.querySelector('.tabs__btn-continue');
+
+let buttonClicked = ['1'];
+
+const handleTabClick = (evt) => {
+  tabs.forEach(tab => {
+    tab.classList.remove('tabs__pane_show');
+  });
+  tabButtons.forEach(tab => {
+    tab.classList.remove('tabs__btn_active');
+  });
+  const {id} = evt.currentTarget;
+  document.querySelector(`[id="tab-${id}"]`).classList.add('tabs__pane_show');
+  document.querySelector(`[id="${id}"]`).classList.add('tabs__btn_active');
+  buttonClicked.push(id);
+  let intersection = ['1', '2', '3', '4'].filter(x => !buttonClicked.includes(x));
+  if (intersection.length == 0) {
+    continueButton.disabled = false;
+  }
+}
+
+tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
